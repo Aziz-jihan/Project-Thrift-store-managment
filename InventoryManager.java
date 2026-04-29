@@ -40,7 +40,7 @@ public class InventoryManager {
     public void removeItem(String serial) throws InvalidSerialException {
         boolean found = false;
         for (int i = 0; i < items.size(); i++) {
-            if (items.get(i).getSerial().equals(serial)) {
+            if (items.get(i).getSerial().equalsIgnoreCase(serial)) {
                 items.remove(i);
                 found = true;
                 break;
@@ -53,7 +53,7 @@ public class InventoryManager {
     
     public ClothingItem getItemBySerial(String serial) {
         for (int i = 0; i < items.size(); i++) {
-            if (items.get(i).getSerial().equals(serial)) {
+            if (items.get(i).getSerial().equalsIgnoreCase(serial)) {
                 return items.get(i);
             }
         }
