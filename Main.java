@@ -20,7 +20,7 @@ public class Main {
         boolean running = true;
         while (running) {
             print_ThriftNaki();
-            System.out.println("Welcome to the system!");
+            System.out.println("Welcome to ThriftNaki!");
             System.out.println("1. Customer");
             System.out.println("2. Admin");
             System.out.println("Type 'exit' to quit.");
@@ -216,7 +216,7 @@ public class Main {
 
         Customer c = customerManager.authenticateCustomer(email, password);
         if (c != null) {
-            System.out.println("Login successful!");
+            System.out.println(c.getName()+" welcome back!");
             return c;
         } else {
             System.out.println("Invalid email or password.");
