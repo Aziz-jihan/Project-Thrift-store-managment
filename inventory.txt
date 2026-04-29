@@ -1,0 +1,2 @@
+Outerwear|O001|black leather jacket|Zara|XL|Good|1200.0|
+Tops|T001|White Check Shirt|Jack & James|XL|Good|799.0|
